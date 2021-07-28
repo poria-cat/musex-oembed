@@ -1,6 +1,6 @@
 {
   "name": "musex-oembed",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "repository": "https://github.com/poria-cat/musex-oembed.git",
   "main": "./dist/musex-oembed.es.js",
   "files": [

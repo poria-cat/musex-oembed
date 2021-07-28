@@ -51,7 +51,7 @@ export default class Embed {
    *   api - Editor.js API
    *   readOnly - read-only mode flag
    */
-  constructor({ data, api, readOnly }) {
+  constructor({ data, config, api, readOnly }) {
     this.api = api;
     this._data = {};
     this.element = null;
@@ -59,6 +59,10 @@ export default class Embed {
     this.readOnly = readOnly;
 
     this.data = data;
+
+    this.config = {
+      proxy: config.proxy || "",
+    };
   }
 
   /**
@@ -374,7 +378,8 @@ export default class Embed {
       <OEmbed
         url={this.data.source}
         // proxy="http://185.70.197.46:8080"
-        proxy="https://musex-cors.herokuapp.com/"
+        // proxy="https://musex-cors.herokuapp.com/"
+        proxy={this.config.proxy}
       />,
       this.container
     );
