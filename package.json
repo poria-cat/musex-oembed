@@ -1,0 +1,29 @@
+{
+  "name": "musex-oembed",
+  "version": "0.0.1",
+  "repository": "https://github.com/editor-js/embed",
+  "main": "./dist/musex-oembed.es.js",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/musex-oembed.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/musex-oembed.es.js",
+      "require": "./dist/musex-oembed.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "debounce": "^1.2.1",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.2",
+    "react-tiny-oembed": "^1.1.0"
+  },
+  "devDependencies": {
+    "vite": "^2.1.5"
+  }
+}
