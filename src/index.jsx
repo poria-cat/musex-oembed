@@ -5,7 +5,6 @@ import React from "react";
 // import { nanoid } from "nanoid";
 import ReactDOM from "react-dom";
 import OEmbed from "react-tiny-oembed";
-
 /**
  * @typedef {object} EmbedData
  * @description Embed Tool data
@@ -385,3 +384,4 @@ export default class Embed {
     );
   }
 }
+export { SERVICES };
